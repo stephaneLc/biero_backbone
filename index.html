@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mon premier prototype avec Backbone</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <h1>Biero avec Backbone.js</h1>
+        <div id="bieres">
+          <h2>formulaire pour ajouté une bière</h2>
+           <form id="ajouterBiere" action="#">
+               <div>
+                   <label forUNB="nom">Nom:</label>
+                   <input type="text" id="nom">
+                   <label for="description">description</label>
+                   <input type="text" id="description">
+                   <button id="ajouterNouvelleBiere">Ajouter</button>
+               </div>
+           </form>
+       </div>
+        <div class="contenuUneBiere">
+          <ul>
+              <li>voila une bière</li>
+              <li> une description d'une bière</li>
+          </ul>
+           
+       </div>
+       
+   <script id="biereTemplate" type="text/template">
+       <ul>
+           <li><%=nom%></li>
+           <li><%=description%></li>
+       </ul>
+            <button class="supprimerBiere">Supprimer</button>
+   </script>
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+
+        <script src="modele/biere.js"></script>
+        <script src="collections/collectionsBieres.js"></script>
+        <script src="vues/vuCaisseBieres.js"></script>
+        <script src="vues/vuUneBiere.js"></script>
+        
+        <script src="app.js"></script>
+        <script src="routes/route.js"></script>
+        
+     
+
+    
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.formulaire
+{
+    border: 2px solid black;
+    padding: 15px;
+}
+.contenuUneBiere
+{
+    border: 2px solid yellow;
+    margin-top: 15px;
+}
